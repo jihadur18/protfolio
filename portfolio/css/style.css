@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile  */
+[class*="col-"]{
+    width: 100%;
+}
+
+
+/* navbar design starts here  */
+
+.navbar{
+    background-color: #008037;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    transition:transform 0.9s easy-in;
+}
+
+.navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.navbar-menu a:hover{
+    background-color: black;
+}
+
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* navbar design ends here  */
+
+
+
+/* profile design starts from here  */
+
+.profile {
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: -3px;
+    background-color: #607D8B;
+}
+
+.profile .top-weather-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family:  Arial;
+    font-size: 3rem;
+    color: white;
+}
+
+.profile-desc p{
+    color: white;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile design ends here  */
+
+
+/* about me design starts here  */
+
+.about-me{
+   background-color: lightslategrey;
+    padding: 1% 7%;
+    color:white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 100%;
+    height: 240px;
+    width: 200px;
+}
+
+.about-me p{
+    text-align: center;
+}
+
+.about-me a{
+    font-size: 1.2rem;
+}
+.about-me h2{
+    background-color: darkmagenta;
+    color: white;
+    padding: 06px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* about me design end here  */
+
+.contact h2 {
+    background-color: darkmagenta;
+    color: white;
+    padding: 06px;
+    text-align: center;
+    margin-top: 5px;
+}
+.icon{
+    color: white;
+    font-size: 2.4rem;
+}
+
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* about me design ends here  */
+
+
+
+/* professional-experience starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+    background-color:steelblue;
+}
+
+.professional-experience .card{
+    background-color: #0c6168;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+     
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+
+.card-icon img {
+    margin-top: 1px;
+    width: 207px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 100%;
+    padding: 0px;
+}
+
+.card-title h2{
+    background-color: darkmagenta;
+    color: white;
+    padding: 06px;
+    text-align: center;
+    margin-top: 5px;
+}
+.card-title{
+
+}
+.card-desc li{
+    margin: 10px 1px;
+}
+
+.skills-container{
+    padding-right: 30px;
+}
+
+.skills-container li {
+    list-style: none;
+    font-weight: bolder;
+    margin: 20px -33px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-container li::before{
+   content: '';
+   position: absolute;
+   top: calc(100% + 1px);
+   left: 0;
+
+   width: 100%;
+   height: 05px;
+   background-color:#fff;
+   border-radius: 1000px;
+}
+
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+ 
+    width: 0;
+    height: 10px;
+    background-color: rgb(86,86,153,1);
+    border-radius: 1000px;
+ }
+
+.professional-experience::after{
+   clear: both;
+   display: table;
+   content: '';
+}
+/* professional-experience ends here  */
+
+
+/* achievement-contact starts from here  */
+.achievemnet-contact{
+    padding: 1% 7%;
+    background-color: #052d2f;
+    color: white;
+}
+.achievement h2{
+    color: blueviolet;
+}
+
+.contact{
+    text-align: center;
+}
+.contact h2 {
+    background-color: darkmagenta;
+    color: white;
+    padding: 06px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #008037;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+
+
+.media-buttons .btn {
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0px;
+    margin: 14px;
+    width: 20px;
+    background-color: black;
+}
+.btn:hover{
+    background-color:black;
+}
+
+.achievemnet-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+
+/* achievement-contact ends here  */
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+footer .contact-links{
+    text-align: center;
+}
+
+
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+p .creator{
+    font: size 14px;
+}
+
+/* footer ends here  */
